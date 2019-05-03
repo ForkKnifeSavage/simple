@@ -26,6 +26,7 @@ var BattleGroundScene = new Phaser.Class({
 
     create: function()
     {
+        this.cursors = this.input.keyboard.createCursorKeys();
         this.physics.add.sprite(100, 87, 'you').setScale(2);
         this.physics.add.image(50, 500, 'Attacker').setScale(0.6);
 
